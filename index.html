@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>ARN</title>
-<link rel="icon" type="image/png" href="favicon.ico"/>
+<link rel="icon" type="image/png" href="favicon.ico" />
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 <script type="text/javascript" src="js/index.js"></script>
 
 </head>
-	<body  >
+<body>
 	<script type="text/x-handlebars" data-template-name="application">
         <div>
     		<div style="position: absolute;width: 100%;" id="ember-app">
@@ -36,91 +36,64 @@
         </div>
 	</script>
 
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Profile</h4>
-                </div>
-                <div class="modal-body" STYLE="padding:88px;">
-                    <p>Do you want to save changes you made to document before closing?</p>
-                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Profile</h4>
+				</div>
+				<div class="modal-body" STYLE="padding: 88px;">
+					<p>Do you want to save changes you made to document before closing?</p>
+					<p class="text-warning">
+						<small>If you don't save, your changes will be lost.</small>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<script type="text/javascript">
-$( document ).ready(function() {
-    console.log( "ready!");
-    $('.details').click(function(){
-    	$('#myModal').modal('show');
-    })
-});
+	<script type="text/javascript">
+		$(document).ready(function() {
+			console.log("ready!");
+			$('.details').click(function() {
+				$('#myModal').modal('show');
+			})
+		});
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6BSFV86G5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
+		gtag('config', 'G-M6BSFV86G5');
+	</script>
 
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-47891282-1', 'auto');
-  ga('send', 'pageview');
-  _gaq.push(['_setPageGroup', 1, 'test']); 
-  ga('set', 'contentGroup1', 'test');
-
-</script>
-
-<script>
-// Include the UserVoice JavaScript SDK (only needed once on a page)
-UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/syuS5Kju7Pao5utoOlbqQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-//
-// UserVoice Javascript SDK developer documentation:
-// https://www.uservoice.com/o/javascript-sdk
-//
-
-// Set colors
-UserVoice.push(['set', {
-  accent_color: '#6aba2e',
-  trigger_color: 'white',
-  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-}]);
-
-// Identify the user and pass traits
-// To enable, replace sample data with actual user traits and uncomment the line
-UserVoice.push(['identify', {
-  //email:      'john.doe@example.com', // User’s email address
-  //name:       'John Doe', // User’s real name
-  //created_at: 1364406966, // Unix timestamp for the date the user signed up
-  //id:         123, // Optional: Unique id of the user (if set, this should not change)
-  //type:       'Owner', // Optional: segment your users by type
-  //account: {
-  //  id:           123, // Optional: associate multiple users with a single account
-  //  name:         'Acme, Co.', // Account name
-  //  created_at:   1364406966, // Unix timestamp for the date the account was created
-  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-  //  ltv:          1495.00, // Decimal; lifetime value of the account
-  //  plan:         'Enhanced' // Plan name for the account
-  //}
-}]);
-
-// Add default trigger to the bottom-right corner of the window:
-UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
-
-// Or, use your own custom trigger:
-//UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
-
-// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-UserVoice.push(['autoprompt', {}]);
-</script>
-	</body>
+	<script type="text/javascript" id="zsiqchat">
+		var $zoho = $zoho || {};
+		$zoho.salesiq = $zoho.salesiq || {
+			widgetcode : "2dbb5586726cbeda0184a24f37a1747df1775cce9b3c0e3af4cb189ba81e14bd",
+			values : {},
+			ready : function() {
+			}
+		};
+		var d = document;
+		s = d.createElement("script");
+		s.type = "text/javascript";
+		s.id = "zsiqscript";
+		s.defer = true;
+		s.src = "https://salesiq.zoho.com/widget";
+		t = d.getElementsByTagName("script")[0];
+		t.parentNode.insertBefore(s, t);
+	</script>
+</body>
 </html>

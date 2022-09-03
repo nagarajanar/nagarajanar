@@ -1,47 +1,42 @@
-body{
+body {
 	background-color: lightgray;
 	width: 100%;
 	height: 100%;
 }
 
 /*** PROFILE   ***/
-.fr{
+.fr {
 	float: right;
 }
 
-#profImg{
+#profImg {
 	height: 48px;
 	width: 46px;
 	border: 1px solid
 }
 
-.pntr{
+.pntr {
 	cursor: pointer;
 }
 
-
-
 /****Content ***/
 .ContentDiv {
-  position: absolute;
-  min-height: 500px;
-  border: 1px dotted red;
-  height: 500px;
-  width: 100%;
+	position: absolute;
+	min-height: 500px;
+	border: 1px dotted red;
+	height: 500px;
+	width: 100%;
 }
 
-
-
 /***  Business Card  ***/
-
 .business-card {
-  position:fixed;
-  top:1px;
-  right:0px;
-  background: #fff;
-  border-top:10px solid red;
-  margin: 0 auto;
-  width: 350px;
-  height : 150px;
-  padding:10px;
+	position: fixed;
+	top: 1px;
+	right: 0px;
+	background: #fff;
+	border-top: 10px solid red;
+	margin: 0 auto;
+	width: 350px;
+	height: 150px;
+	padding: 10px;
 }
