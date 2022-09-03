@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @nagarajanar
+- 👋 Hi, I’m Nagarajan
 - 👀 I’m interested in Web development.
 - 🌱 I’m currently learning Ember, SCSS, Java.
 - 💞️ 
